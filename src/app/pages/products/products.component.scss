@@ -100,6 +100,13 @@
                 font-size: 18px;
                 line-height: 21px;
                 font-weight: 500;
+                max-width: 75%;
+                text-wrap: balance;
+            }
+            & span {
+                display: flex;
+                gap: 10px;
+                color: $grey-bg
             }
         }
         & h4 {
@@ -114,9 +121,8 @@
                 font-size: 12px;
                 line-height: 14px;
                 font-weight: 400;
-                // text-wrap: balance;
                 margin-right: 14px;
-                // max-width: 50%;
+                color: $grey-bg;
             }
         }
         .card-quantity {
@@ -142,8 +148,8 @@
 }
 
 /* Set width of each item to 255px */
-.one, .two, .three, .four, .five,
-.six, .seven, .eight, .nine, .ten {
+.card-1, .card-2, .card-3, .card-4, .card-5,
+.card-6, .card-7, .card-8, .card-9, .card-10 {
     width: 255px;
     max-width: 100%; /* Ensure responsiveness */
     border-radius: $main-BR;

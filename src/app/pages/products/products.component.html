@@ -107,7 +107,28 @@
             </div>
         </div>
     </div>
-    <div class="one">
+
+    <div *ngFor="let product of allProducts; let i = index" class="card-{{i + 1}}">
+            <div class="card">
+                <div class="layer">
+                </div>
+                <div class="card-info">
+                    <div class="title">
+                        <h3>{{ product.title | trimText : 20 }}</h3>
+                        <span>...</span>
+                    </div>
+                    <h4>{{ product.price }}$</h4>
+                    <div class="card-details">
+                        <p>{{ product.description | trimText : 25 }}</p>
+                        <div class="card-quantity">
+                            <span>InStore</span>
+                            <div class="quantity-number">{{ product.rating.count }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- <div class="one">
         <div class="card">
             <div class="layer">
             </div>
@@ -306,5 +327,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
