@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    font-family: "Rubik", sans-serif;
+    font-weight: 900;
+}
+
+
+// Colors
+$main-bg:   #1C204B;
+$purple-bg: #5747EA;
+$orange-bg: #FF8B64;
+$blue-bg:   #55C2E6;
+$pink-bg:   #FF5E7D;
+$yellow-bg: #F1C75B;
+$green-bg:  #4BCF82;
+$grey-bg:   #BBC0FF;
+$text-color:#7078C9;
+
+
+
+
+// Gene ric properties 
+$main-BR: 20px;
+
+
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
