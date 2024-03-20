@@ -139,73 +139,33 @@
     margin: 50px auto;
     display: grid;
     width: 95%;
-    grid-template-columns: repeat(6, minmax(0, 1fr)); /* Equal width columns */
-    grid-template-rows: repeat(2, minmax(0, 1fr)); /* Equal height rows */
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(0, 1fr)); 
     gap: 33px 30px;
     grid-template-areas:
         "sales sales one two three four"
         "sales sales five six seven eight nine ten";
 }
 
-/* Set width of each item to 255px */
+
 .card-1, .card-2, .card-3, .card-4, .card-5,
 .card-6, .card-7, .card-8, .card-9, .card-10 {
     width: 255px;
-    max-width: 100%; /* Ensure responsiveness */
+    max-width: 100%; 
     border-radius: $main-BR;
     padding-inline: 20px;
     padding-bottom: 30px;
     position: relative;
     margin-top: 42px;
-    background-color: $main-bg; /* Orange */
+    background-color: $main-bg; 
     color: white;
 }
 
-/* Set unique background colors for each item */
+
 .best {
     grid-row: span 2;
-    background-color: $main-bg; /* Orange */
+    background-color: $main-bg;
     border-radius: $main-BR;
-}
-
-.one {
-    
-}
-
-.two {
-    
-}
-
-.three {
-    
-}
-
-.four {
-    
-}
-
-.five {
-    
-}
-
-.six {
-    
-}
-
-.seven {
-    
-}
-
-.eight {
-    
-}
-
-.nine {
-    
-}
-
-.ten {
-     
 }
 
 // .container-grid {
