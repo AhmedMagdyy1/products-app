@@ -109,14 +109,15 @@
     </div>
 
     <div *ngFor="let product of allProducts; let i = index" class="card-{{i + 1}}">
-            <div class="card">
-                <div class="layer" [style.background-color]="getRandomColor()">
+        <div class="card">
+            <div class="layer" [style.background-color]="getRandomColor()">
+            </div>
+            <div class="card-info">
+                <div class="title">
+                    <h3>{{ product.title | trimText : 20 }}</h3>
+                    <span>...</span>
                 </div>
-                <div class="card-info">
-                    <div class="title">
-                        <h3>{{ product.title | trimText : 20 }}</h3>
-                        <span>...</span>
-                    </div>
+                <div class="card-indeatils">
                     <h4>{{ product.price }}$</h4>
                     <div class="card-details">
                         <p>{{ product.description | trimText : 25 }}</p>
@@ -127,6 +128,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </div>
     <!-- <div class="one">
         <div class="card">

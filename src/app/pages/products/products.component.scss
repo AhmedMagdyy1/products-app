@@ -10,6 +10,11 @@
         height: 354px;
         background-color: $purple-bg;
         border-radius: $main-BR;
+        @media screen and (max-width:768px) {
+            flex-direction: row;
+            height: auto;
+            padding: 35px 39px 34px 32px;
+        }
         & .img-bg {
             margin: 32px 0 14px ;
             width: 138px;
@@ -19,13 +24,21 @@
             background-size: cover;
             border: 3px solid white;
             background-position: left center;
-           box-shadow:  rgba(0, 0, 0, 0.2) 4.95px 6.95px 2.6px;;
+            box-shadow:  rgba(0, 0, 0, 0.2) 4.95px 6.95px 2.6px;
+            @media screen and (max-width:768px) {
+                width: 120px;
+                height: 86px;
+                // margin-right: 20px;
+            }
         }
     
         & .best-sale-details {
             display: block;
             width: 100%;
             margin-bottom: 10px;
+            @media screen and (max-width:768px) {
+                margin-left: 20px;
+            }
             & span {
                 color: $grey-bg;
                 font-size: 15px;
@@ -40,6 +53,11 @@
                 line-height: 47px;
                 font-weight: 300;
                 letter-spacing: 12px;
+                @media screen and (max-width:768px) {
+                    font-size: 24px;
+                    letter-spacing: normal;
+                    line-height: 28px;
+                }
             }
         }
     
@@ -49,6 +67,10 @@
         display: flex;
         flex-direction: column;
         gap: 21px;
+        @media screen and (max-width:768px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
         & > p {
             color: $text-color;
             font-weight: 400;
@@ -60,7 +82,7 @@
                 color: white;
             }
             &:hover {
-                color: $purple-bg;
+                color: $pink-bg;
             }
         }
     }
@@ -113,6 +135,16 @@
             font-size: 30px;
             font-weight: 300;
             margin-bottom: 10px;
+            @media screen and (max-width:768px) {
+                display: inline-block;
+            }
+        }
+        .card-indeatils {
+            @media screen and (max-width:768px) {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
         }
         .card-details {
             display: flex;
@@ -124,12 +156,21 @@
                 margin-right: 14px;
                 color: $grey-bg;
             }
+            @media screen and (max-width:768px) {
+                display: inline-block;
+            }
         }
         .card-quantity {
             text-align: center;
             font-size: 12px;
             line-height: 14px;
             font-weight: 500;
+                @media screen and (max-width:768px) {
+                    display: none;
+                }
+        }
+        @media screen and (max-width:768px) {
+            width: 100%;
         }
     }
 }
@@ -145,6 +186,13 @@
     grid-template-areas:
         "sales sales one two three four"
         "sales sales five six seven eight nine ten";
+        @media (max-width: 768px) { 
+            display: flex;
+            flex-direction: column;
+            gap: 39px;
+                // grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                // gap: 10px; 
+        }
 }
 
 
@@ -159,6 +207,9 @@
     margin-top: 42px;
     background-color: $main-bg; 
     color: white;
+    @media (max-width: 768px) { 
+        width: 100%;
+    }
 }
 
 
