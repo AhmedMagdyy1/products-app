@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
+
+// Base styles
 * {
     margin: 0;
     padding: 0;
@@ -8,25 +10,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-body {
-    font-family: "Rubik", sans-serif;
-    font-weight: 900;
-    background-color: #0e1323;
-}
+
+
+// Typography
+$base-font-size: 16px;
+$heading-font-size: 24px;
+$text-color: #7078C9;
 
 
 // Colors
+$body-bg:   #0e1323;
 $main-bg:   #1C204B;
 $purple-bg: #5747EA;
-
 $orange-bg: #FF8B64;
 $blue-bg:   #55C2E6;
 $pink-bg:   #FF5E7D;
 $yellow-bg: #F1C75B;
 $green-bg:  #4BCF82;
-
 $grey-bg:   #BBC0FF;
-$text-color:#7078C9;
 
 
 
@@ -34,6 +35,17 @@ $text-color:#7078C9;
 // Gene ric properties 
 $main-BR: 20px;
 
+
+// Mixins
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    font-weight: 900;
+    background-color: $body-bg;
+}
 
 
 .container {
