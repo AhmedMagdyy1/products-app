@@ -7,7 +7,6 @@
         flex-direction: column;
         align-items: center;
         padding-inline: 24px;
-        height: 354px;
         background-color: $purple-bg;
         border-radius: $main-BR;
         @media screen and (max-width:768px) {
@@ -26,20 +25,6 @@
                     box-shadow:  rgba(0, 0, 0, 0.2) 4.95px 6.95px 2.6px;
                 }
             }
-            // margin: 32px 0 14px ;
-            // width: 138px;
-            // height: 145px;
-            // border-radius: 50%;
-            // background-image: url(/assets/images/customer-bg.png);
-            // background-size: cover;
-            // border: 3px solid white;
-            // background-position: left center;
-            // box-shadow:  rgba(0, 0, 0, 0.2) 4.95px 6.95px 2.6px;
-            // @media screen and (max-width:768px) {
-            //     width: 120px;
-            //     height: 113px;
-            //     // margin-right: 20px;
-            // }
         }
     
         & .best-sale-details {
@@ -108,9 +93,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    // background-color: red;
-    // width: 100%;
-    // position: relative;
     .layer {
         position: absolute;
         content: '';
@@ -210,8 +192,6 @@
 
 .card-1, .card-2, .card-3, .card-4, .card-5,
 .card-6, .card-7, .card-8, .card-9, .card-10 {
-    // width: 255px;
-    // max-width: 100%; 
     border-radius: $main-BR;
     padding-inline: 20px;
     padding-bottom: 30px;
